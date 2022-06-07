@@ -11,6 +11,9 @@ show databases;
 # Table一覧
 show tables;
 
+# フィールド一覧
+show fields from テーブル名
+
 # テーブルの中身を確認
 use db名
 select * from table名
