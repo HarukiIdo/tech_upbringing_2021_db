@@ -3,7 +3,7 @@
 docker-compose up -d
 
 # ログイン
-mysql -u root -p -h localhost -P 3306 --protocol=tcp
+mysql -u root -p[password] -h localhost -P 3306 --protocol=tcp
 
 # DB一覧
 show databases;
@@ -20,4 +20,17 @@ select * from table名
 
 # SQLファイル実行
 \. /Users/idoharumare/private/tech_upbringing_2021_db/docker/schemas/sample.sql
+```
+
+## mysqlコマンドオプション
+ユーザ名を指定
+```
+-u ユーザー名 -h ホスト名
+--user=ユーザー名 --host=ホスト名
+```
+パスワードを指定
+```
+-p[パスワード]
+-password=[パスワード]
+```
 
